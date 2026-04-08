@@ -1,1 +1,350 @@
+export default function ConfidenceLabSprintPage() {
+  const highlights = [
+    "4 live sessions over 4 days",
+    "20–25 minutes each",
+    "Small-group training environment",
+    "Structured behavioral reps",
+  ];
+
+  const problems = [
+    "They start to speak, then someone else takes the floor.",
+    "They know what to say, but enter too late.",
+    "They get talked over and do not reclaim the space.",
+    "They walk away replaying what they should have said.",
+  ];
+
+  const curriculum = [
+    {
+      day: "Day 1",
+      title: "Entry Speed",
+      points: [
+        "Entering without hesitation",
+        "Reducing delay in live moments",
+        "Taking action before overthinking takes over",
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Voice & Presence",
+      points: [
+        "Speaking with more clarity and control",
+        "Improving delivery under attention",
+        "Holding space instead of fading out",
+      ],
+    },
+    {
+      day: "Day 3",
+      title: "Friction Response",
+      points: [
+        "Handling interruption and awkwardness",
+        "Staying composed under pressure",
+        "Recovering quickly after social misses",
+      ],
+    },
+    {
+      day: "Day 4",
+      title: "Leadership Signals",
+      points: [
+        "Taking initiative in group dynamics",
+        "Leading instead of waiting to be invited",
+        "Projecting authority without overcompensating",
+      ],
+    },
+  ];
+
+  const outcomes = [
+    "Faster entry into conversations",
+    "Stronger vocal delivery",
+    "Less hesitation in group settings",
+    "More control in real-time interactions",
+  ];
+
+  return (
+    <div className="min-h-screen bg-neutral-950 text-white">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute left-0 top-0 h-[32rem] w-[32rem] rounded-full bg-white/5 blur-3xl" />
+        <div className="absolute right-0 top-40 h-[28rem] w-[28rem] rounded-full bg-white/5 blur-3xl" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      </div>
+
+      <main className="relative mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12 lg:py-12">
+        <section className="grid gap-10 border border-white/10 bg-white/[0.03] p-8 shadow-2xl backdrop-blur sm:p-10 lg:grid-cols-[1.2fr_0.8fr] lg:p-14">
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <div className="inline-flex items-center rounded-full border border-white/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-white/70">
+                Confidence Lab™
+              </div>
+              <h1 className="max-w-4xl text-4xl font-black uppercase leading-none tracking-tight sm:text-6xl lg:text-7xl">
+                4-Day Social Positioning Sprint™
+              </h1>
+              <p className="max-w-2xl text-lg leading-8 text-white/75 sm:text-xl">
+                Premium social positioning training for teens who are capable but
+                under-signaled in group and high-pressure settings.
+              </p>
+            </div>
+
+            <div className="max-w-3xl space-y-5 border-l-4 border-white pl-5">
+              <p className="text-2xl font-bold uppercase leading-tight sm:text-3xl">
+                Most teens do not have a confidence problem.
+              </p>
+              <p className="text-xl font-semibold uppercase text-white/85 sm:text-2xl">
+                They have a timing problem.
+              </p>
+              <p className="text-base leading-8 text-white/75 sm:text-lg">
+                They wait too long. They enter too late. They soften under
+                attention. And in the moments that matter, they disappear.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-4 sm:flex-row">
+              <a
+                href="#apply"
+                className="inline-flex items-center justify-center border border-white bg-white px-7 py-4 text-sm font-black uppercase tracking-[0.2em] text-black transition hover:bg-transparent hover:text-white"
+              >
+                Apply Now
+              </a>
+              <a
+                href="#curriculum"
+                className="inline-flex items-center justify-center border border-white/20 px-7 py-4 text-sm font-bold uppercase tracking-[0.2em] text-white/80 transition hover:border-white hover:text-white"
+              >
+                View Sprint Structure
+              </a>
+            </div>
+          </div>
+
+          <div className="grid gap-4">
+            {highlights.map((item) => (
+              <div
+                key={item}
+                className="border border-white/10 bg-black/40 p-5 shadow-lg"
+              >
+                <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-white/60">
+                  Sprint Detail
+                </p>
+                <p className="mt-3 text-xl font-bold uppercase leading-snug">
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-8 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="border border-white/10 bg-white/[0.03] p-8 sm:p-10">
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-white/55">
+              You have seen this before
+            </p>
+            <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl">
+              This is what under-positioning looks like in real life.
+            </h2>
+          </div>
+
+          <div className="grid gap-4">
+            {problems.map((problem) => (
+              <div key={problem} className="border border-white/10 bg-black/40 p-6">
+                <p className="text-base leading-7 text-white/80 sm:text-lg">{problem}</p>
+              </div>
+            ))}
+            <div className="border border-white bg-white p-6 text-black">
+              <p className="text-sm font-black uppercase tracking-[0.22em]">
+                Diagnosis
+              </p>
+              <p className="mt-3 text-2xl font-black uppercase leading-tight">
+                This is not personality. This is untrained behavior under pressure.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8 grid gap-8 lg:grid-cols-2">
+          <div className="border border-white/10 bg-white/[0.03] p-8 sm:p-10">
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-white/55">
+              What this is
+            </p>
+            <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl">
+              Structured social positioning training.
+            </h2>
+            <p className="mt-6 text-base leading-8 text-white/75 sm:text-lg">
+              This is not therapy. This is not motivation. This is not a passive
+              confidence class. Confidence Lab™ trains observable behavior that
+              changes how a teen is seen, heard, and responded to in real time.
+            </p>
+          </div>
+
+          <div className="border border-white/10 bg-black/40 p-8 sm:p-10">
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-white/55">
+              What we train
+            </p>
+            <div className="mt-6 space-y-5">
+              {[
+                "How fast they enter",
+                "How clearly they speak",
+                "How they respond when pressure shows up",
+                "Whether others follow, defer, or ignore them",
+              ].map((item) => (
+                <div key={item} className="border-b border-white/10 pb-4 last:border-b-0">
+                  <p className="text-xl font-bold uppercase leading-snug">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="curriculum" className="mt-8 border border-white/10 bg-white/[0.03] p-8 sm:p-10 lg:p-12">
+          <div className="max-w-3xl">
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-white/55">
+              Sprint structure
+            </p>
+            <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-5xl">
+              Four days. Four variables. Reps under pressure.
+            </h2>
+          </div>
+
+          <div className="mt-10 grid gap-5 lg:grid-cols-2">
+            {curriculum.map((item) => (
+              <div key={item.day} className="border border-white/10 bg-black/40 p-7">
+                <p className="text-sm font-black uppercase tracking-[0.22em] text-white/55">
+                  {item.day}
+                </p>
+                <h3 className="mt-3 text-2xl font-black uppercase leading-tight">
+                  {item.title}
+                </h3>
+                <div className="mt-5 space-y-3">
+                  {item.points.map((point) => (
+                    <div key={point} className="flex gap-3">
+                      <div className="mt-2 h-2 w-2 flex-none bg-white" />
+                      <p className="text-base leading-7 text-white/75">{point}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-8 grid gap-8 lg:grid-cols-[1fr_0.9fr]">
+          <div className="border border-white/10 bg-black/40 p-8 sm:p-10">
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-white/55">
+              Format
+            </p>
+            <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl">
+              Short sessions. Tight structure. No hiding.
+            </h2>
+            <p className="mt-6 text-base leading-8 text-white/75 sm:text-lg">
+              The sprint is built for immediate execution. These are not long,
+              passive sessions. Each class is engineered for concentrated reps,
+              direct correction, and visible adjustment in a controlled small-group
+              environment.
+            </p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {[
+                "Live coach-led sessions",
+                "Direct feedback in real time",
+                "Small-group participation",
+                "Immediate behavioral reps",
+              ].map((item) => (
+                <div key={item} className="border border-white/10 p-4">
+                  <p className="text-sm font-bold uppercase tracking-[0.16em] text-white/85">
+                    {item}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="border border-white bg-white p-8 text-black sm:p-10">
+            <p className="text-sm font-black uppercase tracking-[0.25em]">
+              What changes
+            </p>
+            <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl">
+              You do not get vague promises. You get visible shifts.
+            </h2>
+            <div className="mt-8 space-y-4">
+              {outcomes.map((item) => (
+                <div key={item} className="border-b border-black/10 pb-4 last:border-b-0">
+                  <p className="text-xl font-black uppercase leading-snug">{item}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 text-base leading-8 text-black/75 sm:text-lg">
+              Not because a teen feels more confident. Because they have been
+              trained to execute differently.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-8 grid gap-8 lg:grid-cols-2">
+          <div className="border border-white/10 bg-white/[0.03] p-8 sm:p-10">
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-white/55">
+              What happens after the sprint
+            </p>
+            <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl">
+              The sprint creates the shift. The intensive makes it stick.
+            </h2>
+            <p className="mt-6 text-base leading-8 text-white/75 sm:text-lg">
+              Families who want deeper development can move into the Confidence
+              Lab™ Coaching Intensive: an 8-week program built around structured
+              diagnostics, live coaching, repetition, and transfer into real-world
+              social environments.
+            </p>
+          </div>
+
+          <div className="border border-white/10 bg-black/40 p-8 sm:p-10">
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-white/55">
+              Intensive includes
+            </p>
+            <div className="mt-6 space-y-4">
+              {[
+                "8 weeks of structured training",
+                "Positioning diagnostics",
+                "Real-world social rep tracking",
+                "Parent strategy integration",
+              ].map((item) => (
+                <div key={item} className="flex gap-3 border-b border-white/10 pb-4 last:border-b-0">
+                  <div className="mt-2 h-2 w-2 flex-none bg-white" />
+                  <p className="text-lg font-semibold uppercase leading-snug text-white/85">
+                    {item}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="apply"
+          className="mt-8 border border-white bg-white px-8 py-10 text-black sm:px-10 sm:py-12 lg:px-14"
+        >
+          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+            <div>
+              <p className="text-sm font-black uppercase tracking-[0.25em]">
+                Apply
+              </p>
+              <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-5xl">
+                This sprint is for families who want serious training.
+              </h2>
+              <p className="mt-6 max-w-2xl text-base leading-8 text-black/75 sm:text-lg">
+                If your teen is capable but under-recognized, this is the next
+                move. Apply to the 4-Day Social Positioning Sprint™ and complete
+                the qualification process to be considered.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-4 sm:flex-row lg:flex-col">
+              <a
+                href="https://your-application-link.com"
+                className="inline-flex items-center justify-center border border-black bg-black px-7 py-4 text-sm font-black uppercase tracking-[0.2em] text-white transition hover:bg-transparent hover:text-black"
+              >
+                Start Application
+              </a>
+              <p className="text-sm font-semibold uppercase tracking-[0.12em] text-black/60">
+                Acceptance is based on fit, participation readiness, and family commitment.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
 
