@@ -388,7 +388,7 @@
   align-items: center;
   justify-content: center;
   background: var(--black);
-  color: var(--white);
+  color: var(--white) !important;
   border: 1px solid var(--black);
   padding: 16px 22px;
   font-size: 13px;
@@ -399,10 +399,11 @@
   transition: 0.2s ease;
 }
 
-.apply-panel .btn {
+.apply-panel .btn:hover {
   background: var(--black);
-  color: white !important;
+  color: var(--white) !important;
   border: 1px solid var(--black);
+  opacity: 0.9;
 }
 
     .footer-line {
@@ -648,11 +649,10 @@
       </div>
 
       <div class="apply-panel">
-        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeEz4jSO6IkDgFZDDE04-RreqNeRORlzLodF3br8YiamdLFjA/viewform"</a>
-        <div class="apply-note">
-          Apply for the 4-Day Social Positioning Sprint™
-        </div>
-      </div>
+  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeEz4jSO6IkDgFZDDE04-RreqNeRORlzLodF3br8YiamdLFjA/viewform" target="_blank">
+    Apply for the 4-Day Social Positioning Sprint™
+  </a>
+</div>
     </section>
 
     <div class="footer-line">
